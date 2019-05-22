@@ -37,7 +37,7 @@ $(document).ready(function() {
     $("#saveButton").click(function(event) {
         event.stopPropagation();
         var save = {};
-        var saveName = $("#saveName").val();
+        var saveName = $("<div>").text($("#saveName").val()).html();
         if(saveName === "") {
             alert("Please provide a name for this entry")
             return;
