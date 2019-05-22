@@ -1,7 +1,7 @@
 {
   "name": "Custom Invoices for Harvest",
   "description": "Switch easily between languages or custom labels when invoicing in Harvest",
-  "version": "0.2",
+  "version": "0.3",
   "content_scripts":[
     {
       "matches":["https://*.harvestapp.com/invoices/translations"],
