@@ -34,8 +34,39 @@ $(document).ready(function() {
 
     // SAVE CALLS SCRAPE ACTION IN CONTENT.JS
     //alldata might not be alive yet, but it should be once the user pushes this button
+
+    $("#saveName").keypress(function( event ) {
+        event.stopPropagation();
+        if ( event.which == 13 ) {
+           handleSave();
+        }
+      });
+
     $("#saveButton").click(function(event) {
         event.stopPropagation();
+        handleSave();
+        
+    });
+
+  });
+
+  //ONCE SCRAPED, MESSAGE IS SENT TO STORE IN STORAGE
+  chrome.runtime.onMessage.addListener(
+    function(request, sender, sendResponse) {
+        
+      if( request.message === "scrapeTranslationsAndSave" ) {
+
+          var save = {};
+        save[request.saveName] =  request.translations;            
+                    chrome.storage.sync.set(save, function() {
+                        window.location.href = "popup.html";
+                        
+                });
+      }
+    });
+
+    function handleSave()
+    {
         var save = {};
         var saveName = $("<div>").text($("#saveName").val()).html();
         if(saveName === "") {
@@ -58,24 +89,7 @@ $(document).ready(function() {
                     
             );
         });
-    });
-
-  });
-
-  //ONCE SCRAPED, MESSAGE IS SENT TO STORE IN STORAGE
-  chrome.runtime.onMessage.addListener(
-    function(request, sender, sendResponse) {
-        
-      if( request.message === "scrapeTranslationsAndSave" ) {
-
-          var save = {};
-        save[request.saveName] =  request.translations;            
-                    chrome.storage.sync.set(save, function() {
-                        window.location.href = "popup.html";
-                        
-                });
-      }
-    });
+    }
 
 
 
