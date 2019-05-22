@@ -1,0 +1,34 @@
+
+#main{
+    padding:10px;
+}
+footer{
+    padding:10px;
+}
+#saved_translations
+{
+   
+    max-height:300px;
+    overflow-y: scroll;
+    overflow-x:hidden;
+}
+
+#title{
+    margin:0px;
+    padding:0px;
+    padding-top:10px;
+    text-align: center;
+}
+
+.badge, .collection-item{
+    cursor:pointer;
+}
+
+
+.input-field input[type=text]:focus + label {
+    color: #d81b60;
+  }
+  .input-field input[type=text]:focus {
+    border-bottom: 1px solid #d81b60 !important;
+    box-shadow: 0 1px 0 0 #d81b60 !important;
+  }
