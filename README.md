@@ -12,7 +12,7 @@ The best use case would be the support for multiple languages. Some countries ha
 
 ## How does it work
 
-Log into Harvest and go to Invoices > Configure > Translations, or type in the URL <youraccount>.harvestapp.com/invoices/translations (replace <youraccount> with your account name).
+Log into Harvest and go to Invoices > Configure > Translations, or type in the URL *youraccount*.harvestapp.com/invoices/translations (replace *youraccount* with your account name).
   
 ![harvest_location](https://user-images.githubusercontent.com/1956379/58194917-1b4edc80-7cc7-11e9-8837-daf4d1109c2d.PNG)
 
