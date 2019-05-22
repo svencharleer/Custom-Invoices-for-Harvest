@@ -28,6 +28,6 @@ When you need to invoice with a specific set of labels, go to the Translations c
 
 ## Questions, comments,...
 
-This is a simple solution that I personally needed to support multiple languages for my local and international clients. In case of any remarks or questions, contact me on @svencharleer. 
+This is a simple solution that I personally needed to support multiple languages for my local and international clients. In case of any remarks or questions, contact me on [@svencharleer](http://twitter.com/svencharleer). 
 
 
