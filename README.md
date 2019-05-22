@@ -4,7 +4,7 @@ Switch easily between languages or custom labels when invoicing in Harvest.
 ![harvest_anim](https://user-images.githubusercontent.com/1956379/58195716-e80d4d00-7cc8-11e9-8964-3c5533022923.gif)
 
 ## What is it?
-Harvest now allows you to customise every single lable on your invoice. This Chrome Extension allows you to create multiple sets of custom labels which can easily be loaded into the Invoices configuration screen with this Chrome Extension.
+Harvest now allows you to customise every single label on your invoice. This Chrome Extension allows you to create multiple sets of custom labels which can easily be loaded into the Invoices configuration screen with this Chrome Extension.
 
 ## Show me a use case
 
